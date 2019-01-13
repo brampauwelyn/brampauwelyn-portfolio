@@ -1,14 +1,29 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <Navigation />
     </div>
     <router-view/>
+    <Footer/>
   </div>
 </template>
 
-<style>
+<script>
+import Navigation from '@/components/Navigation.vue'
+import Footer from '@/components/Footer.vue'
+
+
+export default {
+  name: 'App',
+  components: {
+    Navigation, Footer
+  }
+}
+</script>
+
+<style lang="scss">
+@import '@/scss/_base.scss';
+
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -18,3 +33,5 @@
   margin-top: 60px;
 }
 </style>
+
+

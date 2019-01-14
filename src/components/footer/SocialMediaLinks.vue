@@ -10,50 +10,47 @@
 
 <script>
 export default {
-  name: 'SocialMediaLinks'
-}
+  name: "SocialMediaLinks"
+};
 </script>
 
 <style lang="scss">
 .social {
-	list-style: none;
+  list-style: none;
 }
 
 .social li {
-	display: inline-block;
-	position: relative;
+  display: inline-block;
+  position: relative;
 }
 
 .social li a {
-	font-size: 16px;
-	color: #111111;
-	padding: 0 15px;
-	-webkit-transition: all 0.2s ease;
-	transition: all 0.2s ease;
+  font-size: 16px;
+  color: #111111;
+  padding: 0 15px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .social li a:hover {
-	color: #ff9999;
+  color: #ff9999;
 }
 
 .social li:first-child a {
-	padding-left: 0;
+  padding-left: 0;
 }
 
 .social li:last-child a {
-	padding-right: 0;
+  padding-right: 0;
 }
-
 
 .footer .social {
-	margin-bottom: 0;
+  margin-bottom: 0;
 }
 
-@media (max-width:800px) {
-
-	.footer .social {
-		margin: 50px 0;
-	}
-
+@media (max-width: 800px) {
+  .footer .social {
+    margin: 50px 0;
+  }
 }
 </style>

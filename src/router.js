@@ -24,6 +24,12 @@ export default new Router({
       name: 'contact',
       component: () => import(/* webpackChunkName: "about" */ './views/Contact.vue')
     },
+    {
+      path: '/projects/north-sea-products',
+      name: 'north-sea-products',
+      component: () => import(/* webpackChunkName: "about" */ './views/projects/NorthSeaProducts.vue')
+    },
+
   ],
   linkActiveClass: 'active'
 })

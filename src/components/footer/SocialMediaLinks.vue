@@ -1,9 +1,9 @@
 <template>
   <div id="social-media-links">
     	<ul class="social">
-				<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-				<li><a href="#"><i class="fa fa-github"></i></a></li>
-				<li><a href="#"><i class="fa fa-envelope-o"></i></a></li>
+				<li><a href="https://www.linkedin.com/in/brampauwelyn"><i class="fa fa-linkedin"></i></a></li>
+				<li><a href="https://github.com/brampauwelyn"><i class="fa fa-github"></i></a></li>
+				<li><a href="mailto:hello@brampauwelyn.be"><i class="fa fa-envelope-o"></i></a></li>
 			</ul>
   </div>
 </template>

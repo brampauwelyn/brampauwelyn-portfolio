@@ -3,12 +3,18 @@
 		<div class="container text-center">
 			<h1 class="big-title">Web Developer</h1>
 		</div>
+		<CurrentTrack />
 	</div>
 </template>
 
 <script>
+import CurrentTrack from '@/components/CurrentTrack.vue';
+
 export default {
-  name: 'Header'
+	name: 'Header',
+	components: {
+		CurrentTrack
+	}
 }
 </script>
 

@@ -1,25 +1,28 @@
 <template>
   <div id="home-portfolio" class="portfolio">
-		<div class="gallery" data-cols="3" data-margin="0" data-ratio="1:1">
 			<!-- entry -->
-      <PortfolioEntry 
-        src="./logo.png"
-        category="Webdevelopment / Webdesign"
-        title="North Sea Products"
-        portfolio-link="http://www.northseaproducts.be/"
-      />
-
-		</div>
+      <PortfolioEntry />
+      <PortfolioEntry />
 	</div>
 </template>
 
 <script>
+import PortfolioEntry from '@/components/home/PortfolioEntry.vue'
 
 export default {
-  name: 'HomePortfolio'
+  name: 'HomePortfolio',
+  components: {
+    PortfolioEntry
+  }
 }
 </script>
 
 <style lang="scss">
+.portfolio{
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 400px;
+  overflow: hidden;
+}
 
 </style>

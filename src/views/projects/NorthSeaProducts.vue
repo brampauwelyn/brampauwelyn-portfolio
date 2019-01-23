@@ -1,5 +1,6 @@
 <template>
-  <div>
+  <div class="container project-detail">
+    <img src="@/assets/zot-van-de-noordzee.jpg" alt="">
     <Project />
   </div>
 </template>
@@ -14,3 +15,8 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+
+</style>
+

@@ -1,6 +1,5 @@
 <template>
   <div class="project">
-		<div class="container">
 			<div class="gap-100"></div>
 			<div class="row">
         <ProjectDetails
@@ -12,7 +11,6 @@
         />
         <ProjectDescription />
 			</div>
-		</div>
   </div>
 </template>
 

@@ -2,19 +2,16 @@
     <!-- header -->
     <header class="header">
       <div class="container">
-        <a href="index.html" class="main-logo">Omio</a>
+        <a href="index.html" class="main-logo">
+					<img src="@/assets/logo.svg" width="60" alt="">
+				</a>
         <div class="main-nav float-right">
           <ul class="menu">
             <li><router-link to="/">Home</router-link></li>
-            <li><router-link to="/about">Work</router-link></li>
+						<li><router-link to="/about">About</router-link></li>
+            <li><router-link to="/work">Work</router-link></li>
             <li><router-link to="/contact">Contact</router-link></li>
           </ul>
-        </div>
-
-        <div class="trigger float-right">
-          <span class="icon-bar top"></span>
-          <span class="icon-bar middle"></span>
-          <span class="icon-bar bottom"></span>
         </div>
       </div>
 

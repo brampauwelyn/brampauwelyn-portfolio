@@ -21,7 +21,7 @@ export default {
     getCurrentTrack: function(){
       const user = 'bram_pauwelyn';
       const api_key = '6cd40f6787867ede2c5aa4e2f103be06';
-      const url = `http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=${user}&api_key=${api_key}&limit=1&format=json`;
+      const url = `https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=${user}&api_key=${api_key}&limit=1&format=json`;
       axios.get(url)
       .then( (res) => {
         const song = res.data.recenttracks.track[0];

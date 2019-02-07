@@ -1,5 +1,5 @@
 <template>
-  <div id="current-track">
+  <div id="current-track" v-show="loaded">
     <div class="track-info">
       <div class="cover__thumbnail">
         <div class="cover__equalizer">
@@ -24,7 +24,8 @@ export default {
    return{
      artist: '',
      song: '',
-     image: ''
+     image: '',
+     loaded: false
    }
   },
   methods: {
@@ -38,11 +39,12 @@ export default {
         this.song = song.name;
         this.image = song.image[3]["#text"];
         this.artist = song.artist["#text"];
+        this.loaded = true;
       })
     }
   },
   created(){
-    this.getCurrentTrack();
+    this.getCurrentTrack()
   }
 }
 </script>
@@ -92,6 +94,10 @@ export default {
     position: absolute;
     width: 100%;
     height: 100%;
+    width: 50px;
+    height: 50px;
+    top: 0;
+    left: 0;
   }
 
   .artist{
@@ -103,13 +109,22 @@ export default {
     width: 5px;
     height: 10px;
     background-color: #fff;
+    bottom: 0;
+    position: absolute;
   }
 
 
 @keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+    from { 
+      opacity: 0; 
+      transform: scale(0) translateX(3000px);
+    }
+    to   { 
+      opacity: 1;
+      transform: scale(1) translate(0,0);
+    }
 }
+
 
 
 </style>

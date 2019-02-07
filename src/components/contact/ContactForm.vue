@@ -1,7 +1,7 @@
 <template>
-  <div id="contact-form" name="contact" method="POST" data-netlify="true" class="column col-6">
+  <div id="contact-form" class="column col-6">
       <h4>Send me a Message</h4>
-      <form action="contact.html" id="contact-form" autocomplete="off">
+      <form autocomplete="off" name="contact" method="POST" data-netlify="true">
         <div class="form-group">
           <input type="text" name="name" id="name" placeholder="Your name">
         </div>

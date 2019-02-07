@@ -7,7 +7,7 @@
 				</p>
 				<h2 class="portfolio-entry__title">Zot van de noordzee</h2>
 			</div>
-			<img src="images/zot-van-de-noordzee.jpg" alt="">
+			<img src="/images/zot-van-de-noordzee.jpg" alt="">
 		</nuxt-link>
 	</div>
 </template>

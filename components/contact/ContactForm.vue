@@ -1,7 +1,7 @@
 <template>
   <div id="contact-form" class="column col-6">
       <h4>Send me a Message</h4>
-      <form name="contact-form" method="POST" netlify netlify-honeypot="bot-field">
+      <form action="" name="contact-form" method="post" netlify netlify-honeypot="bot-field">
         <div class="form-group">
           <input type="text" name="name" id="name" placeholder="Your name">
         </div>

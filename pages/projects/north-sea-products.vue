@@ -1,6 +1,6 @@
 <template>
   <div class="container project-detail">
-    <img src="images/zot-van-de-noordzee.jpg" alt="">
+    <img src="/images/zot-van-de-noordzee.jpg" alt="">
     <Project />
   </div>
 </template>

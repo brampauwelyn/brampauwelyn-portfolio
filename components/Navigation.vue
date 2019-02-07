@@ -3,7 +3,7 @@
     <header class="header">
       <div class="container">
         <nuxt-link to="/" class="main-logo">
-					<img src="images/logo.svg" width="60" alt="">
+					<img src="/images/logo.svg" width="60" alt="">
 				</nuxt-link>
         <div class="main-nav float-right">
           <ul class="menu">

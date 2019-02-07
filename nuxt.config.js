@@ -15,8 +15,14 @@ module.exports = {
       { hid: 'description', name: 'description', content: pkg.description }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Work+Sans:400,500,700'},
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Cardo:400,700'},
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Ubuntu:400,700'}
+    ],
+    script: [
+      { src: 'https://use.fontawesome.com/73c1fb36d0.js', async: true, defer: true }
+    ],
   },
 
   /*

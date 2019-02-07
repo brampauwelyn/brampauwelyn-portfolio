@@ -11,6 +11,7 @@
         <div class="form-group">
           <textarea name="message" id="message" placeholder="Message"></textarea>
         </div>
+        <input type="hidden" name="form-name" value="contact-form" />
         <div class="form-group">
           <button class="btn dark" type="submit">Send Message</button>
         </div>

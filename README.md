@@ -1,28 +1,22 @@
 # brampauwelyn-portfolio
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/85fb6847-3d75-4dee-af99-0afeee1b14a4/deploy-status)](https://app.netlify.com/sites/stupefied-pike-5dd486/deploys)
+> my portfolio website
 
-## Project setup
-```
-npm install
-```
+## Build Setup
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+``` bash
+# install dependencies
+$ yarn install
 
-### Compiles and minifies for production
-```
-npm run build
-```
+# serve with hot reload at localhost:3000
+$ yarn run dev
 
-### Run your tests
-```
-npm run test
+# build for production and launch server
+$ yarn run build
+$ yarn start
+
+# generate static project
+$ yarn run generate
 ```
 
-### Lints and fixes files
-```
-npm run lint
-```
+For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).

@@ -9,9 +9,15 @@
 <script>
 import Navigation from '@/components/Navigation.vue';
 import Footer from '@/components/Footer.vue';
+import Work from '@/static/work.json';
 
 export default {
   name: 'default',
+  data: function(){
+    return {
+      allWork: Work
+    }
+  },
   components: {
     Navigation,
     Footer

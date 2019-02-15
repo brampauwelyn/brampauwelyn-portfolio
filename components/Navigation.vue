@@ -7,9 +7,20 @@
 				</nuxt-link>
         <div class="main-nav float-right">
           <ul class="menu">
-            <li><nuxt-link to="/">Home</nuxt-link></li>
-						<li><nuxt-link to="/about">About</nuxt-link></li>
-            <li><nuxt-link to="/work">Work</nuxt-link></li>
+            <li>
+							<nuxt-link to="/">Home</nuxt-link>
+						</li>
+						<li>
+							<nuxt-link to="/about">About</nuxt-link>
+						</li>
+            <li>
+							<nuxt-link to="/work" class="parent">Work</nuxt-link>
+							<ul class="submenu visible">
+								<li :key="index" v-for="(work,index) in allWork">
+									<nuxt-link to="`work/${work.name}`">{{ work.name }}</nuxt-link>
+								</li>
+							</ul>
+						</li>
             <li><nuxt-link to="/contact">Contact</nuxt-link></li>
           </ul>
         </div>
@@ -21,8 +32,8 @@
 
   <script>
   export default {
-    name: 'Navigation'
-  }
+		name: 'Navigation'
+	}
   </script>
 
   <style>

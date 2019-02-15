@@ -1,0 +1,20 @@
+[
+  {
+    "name":"zot-van-de-noordzee",
+    "client": "Jean Sur Mer",
+    "category": "development/design",
+    "technologies": "html, gulp, sass",
+    "date": "random_date",
+    "description_intro":"blablbalbalabla",
+    "image":"zot-van-de-noordzee"
+  },
+  {
+    "name":"de-waterkant-wervik",
+    "client": "De Waterkant Wervik",
+    "category": "development/design",
+    "technologies": "php, html, css, bootstrap",
+    "date": "random_date",
+    "description_intro":"blablbalbalabla",
+    "image":"zot-van-de-noordzee"
+  }
+]

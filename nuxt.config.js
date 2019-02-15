@@ -1,5 +1,5 @@
 const pkg = require('./package')
-
+const work = require('./static/work.json')
 
 module.exports = {
   mode: 'universal',
@@ -66,5 +66,17 @@ module.exports = {
     extend(config, ctx) {
       
     }
+  },
+  /*
+  ** Generate configuration 
+  */
+  generate: {
+    // Dynamic routes
+    routes: function(){
+      return work.map((item) => {
+        return '/work/' + item.name
+      })
+    }
   }
 }
+

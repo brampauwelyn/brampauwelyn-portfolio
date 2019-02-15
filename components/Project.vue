@@ -3,13 +3,18 @@
 			<div class="gap-100"></div>
 			<div class="row">
         <ProjectDetails
-          client="Jean Sur Mer"
-          date="27.01.2017"
-          technologies="html, sass, js, gulp"
-          siteLink="http://www.northseaproducts.com"
-          siteName="northseaproducts.com"
+          :client="client"
+          :date="date"
+          :technologies="technologies"
+          :siteLink="siteLink"
+          :siteName="siteName"
         />
-        <ProjectDescription />
+        <ProjectDescription 
+          :category="category"
+          :client="client"
+          :description_intro="description_intro"
+          :description_main="description_main"
+        />
 			</div>
   </div>
 </template>
@@ -20,6 +25,7 @@ import ProjectDescription from '@/components/projects/ProjectDescription.vue';
 
 export default {
   name: 'Project',
+  props: ['client', 'date', 'technologies', 'siteLink', 'siteName', 'category','description_intro','description_main'],
   components: {
     ProjectDetails,
     ProjectDescription

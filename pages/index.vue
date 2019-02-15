@@ -1,10 +1,8 @@
 <template>
-  <section class="container">
     <div>
       <Header/>
       <HomePortfolio />
     </div>
-  </section>
 </template>
 
 <script>

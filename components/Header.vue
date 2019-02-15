@@ -8,10 +8,12 @@
 </template>
 
 <script>
+import Work from '@/static/work.json';
 import CurrentTrack from '@/components/CurrentTrack.vue';
 
 export default {
 	name: 'Header',
+	allWork: Work,
 	components: {
 		CurrentTrack
 	}

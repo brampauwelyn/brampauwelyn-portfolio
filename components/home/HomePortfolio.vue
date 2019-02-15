@@ -1,8 +1,8 @@
 <template>
   <div id="home-portfolio" class="portfolio">
 			<!-- entry -->
-      <PortfolioEntry />
-      <PortfolioEntry />
+
+      <PortfolioEntry :key="index" v-for="(item, index) in this.$default.allWork"/>
 	</div>
 </template>
 

@@ -1,8 +1,13 @@
 <template>
   <div id="home-portfolio" class="portfolio">
 			<!-- entry -->
-
-      <PortfolioEntry :key="index" v-for="(item, index) in this.$default.allWork"/>
+      <PortfolioEntry 
+       :key="index" v-for="(item,index) in this.$root.allWork"
+       :category="item.category"
+       :name="item.name"
+       :seoUrl="item.seoUrl"
+       :image="item.image"
+      />
 	</div>
 </template>
 
@@ -15,14 +20,14 @@ export default {
     PortfolioEntry
   }
 }
+
 </script>
 
 <style lang="scss">
 .portfolio{
   display: grid;
-  grid-template-columns: 60% 40%;
+  grid-template-columns: 0.5fr 0.5fr;
   grid-template-rows: 400px;
-  overflow: hidden;
 }
 
 </style>

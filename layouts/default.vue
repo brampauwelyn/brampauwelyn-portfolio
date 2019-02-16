@@ -13,14 +13,12 @@ import Work from '@/static/work.json';
 
 export default {
   name: 'default',
-  data: function(){
-    return {
-      allWork: Work
-    }
-  },
   components: {
     Navigation,
     Footer
+  },
+  created(){
+    this.$root.allWork = Work;
   }
 }
 </script>

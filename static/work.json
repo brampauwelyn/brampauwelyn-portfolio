@@ -1,20 +1,46 @@
 [
   {
-    "name":"zot-van-de-noordzee",
+    "name":"Zot van de Noordzee",
     "client": "Jean Sur Mer",
     "category": "development/design",
     "technologies": "html, gulp, sass",
     "date": "random_date",
     "description_intro":"blablbalbalabla",
-    "image":"zot-van-de-noordzee"
+    "description_main": "djfdkfkdjksqjfkdjk",
+    "image":"zot-van-de-noordzee",
+    "seoUrl":"/work/zot-van-de-noordzee"
   },
   {
-    "name":"de-waterkant-wervik",
+    "name":"North Sea Products",
+    "client": "Jean Sur Mer",
+    "category": "development/design",
+    "technologies": "html, gulp, sass",
+    "date": "random_date",
+    "description_intro":"blablbalbalabla",
+    "description_main": "djfdkfkdjksqjfkdjk",
+    "image":"north-sea-products",
+    "seoUrl":"/work/north-sea-products"
+  },
+  {
+    "name":"De Waterkant Wervik",
     "client": "De Waterkant Wervik",
     "category": "development/design",
     "technologies": "php, html, css, bootstrap",
-    "date": "random_date",
+    "date": "March 2017",
     "description_intro":"blablbalbalabla",
-    "image":"zot-van-de-noordzee"
+    "description_main":"kfjdkfjkdkfkdjkfjkd",
+    "image":"de-waterkant-wervik",
+    "seoUrl":"/work/de-waterkant-wervik"
+  },
+  {
+    "name":"Garden Optimizer",
+    "client": "Personal project",
+    "category": "development / design",
+    "technologies": "python, flask, vue",
+    "date": "January 2019",
+    "description_intro":"blablbalbalabla",
+    "description_main":"kfjdkfjkdkfkdjkfjkd",
+    "image":"garden-optimizer",
+    "seoUrl":"/work/garden-optimizer"
   }
 ]

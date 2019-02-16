@@ -1,20 +1,21 @@
 <template>
 	<div class="portfolio-entry">
-		<nuxt-link to="/work/zot-van-de-noordzee"> 
+		<nuxt-link :to="seoUrl"> 
 			<div class="portfolio-entry__overlay">
 				<p class="portfolio-entry__category">
-					Category: <span>{{ item.category }}</span>
+					Category: <span>{{ category }}</span>
 				</p>
-				<h2 class="portfolio-entry__title">{{ item.name }}</h2>
+				<h2 class="portfolio-entry__title">{{ name }}</h2>
 			</div>
-			<img src="/images/zot-van-de-noordzee.jpg" alt="">
+			<img :src="require('@/static/images/'+image+'.jpg')" alt="">
 		</nuxt-link>
 	</div>
 </template>
 
 <script>
 export default {
-  name: 'PortfolioEntry'
+	name: 'PortfolioEntry',
+	props: ['category','name','seoUrl','image']
 }
 </script>
 

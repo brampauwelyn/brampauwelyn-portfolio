@@ -14,6 +14,7 @@
           :client="client"
           :description_intro="description_intro"
           :description_main="description_main"
+          :name="name"
         />
 			</div>
   </div>
@@ -25,7 +26,7 @@ import ProjectDescription from '@/components/projects/ProjectDescription.vue';
 
 export default {
   name: 'Project',
-  props: ['client', 'date', 'technologies', 'siteLink', 'siteName', 'category','description_intro','description_main'],
+  props: ['client','name', 'date', 'technologies', 'siteLink', 'siteName', 'category','description_intro','description_main'],
   components: {
     ProjectDetails,
     ProjectDescription

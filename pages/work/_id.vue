@@ -1,11 +1,12 @@
 <template>
   <div class="container project-detail">
-    <img :src="require(`@/static/images/${image}.jpg`)" alt="">
-    <h1>{{ $route.params.id }}</h1>
+    <img :src="require('@/static/images/'+image+'.jpg')" alt="">
     <Project 
       :client="client"
       :date="date"
+      :name="name"
       :category="category"
+      :technologies="technologies"
     />
   </div>
 </template>
@@ -20,9 +21,11 @@ export default {
     return {
       selectedWork: "",
       client: "",
+      name: "",
       category: "",
       date: "",
       image: "",
+      technologies: ""
     }
   },
   components: {
@@ -30,12 +33,14 @@ export default {
   },
   methods: {
     getWork: function(){
-      const workname = this.$route.params.id;
-      this.selectedWork = this.allWork.filter( work => work.name === workname);
-      this.client = this.selectedWork[0].name;
+      const path = this.$route.path;
+      this.selectedWork = this.$root.allWork.filter( work => work.seoUrl === path);
+      this.client = this.selectedWork[0].client;
       this.category = this.selectedWork[0].category;
       this.date = this.selectedWork[0].date;
       this.image = this.selectedWork[0].image;
+      this.technologies = this.selectedWork[0].technologies;
+      this.name = this.selectedWork[0].name;
     }
   },
   created(){

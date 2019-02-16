@@ -74,7 +74,7 @@ module.exports = {
     // Dynamic routes
     routes: function(){
       return work.map((item) => {
-        return '/work/' + item.name
+        return '/work/' + item.seoUrl
       })
     }
   }
